@@ -39,7 +39,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: hml
-      url: ${{ secrets.HEROKU_URL }}
+      url: https://teste-dot-net-core-docker.herokuapp.com/WeatherForecast
     needs: deploy-dev
     steps:
     - name: Checkout

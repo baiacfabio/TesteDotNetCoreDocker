@@ -39,7 +39,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: hml
-      url: teste-dot-net-core-docker@heroku.com
+      url: ${{ secrets.HEROKU_URL }}
     needs: deploy-dev
     steps:
     - name: Checkout
